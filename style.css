@@ -1,0 +1,800 @@
+/*
+Theme Name: nameless
+Theme URI: http://koch-werkstatt.de
+Description: The Theme without a name
+Version: 1.0
+Author: Karsten Kuhnen
+Author URI: http://koch-werkstatt.de
+*/
+
+body {
+      background: #ffffff;
+      color: #000;
+      margin: 0;
+      padding: 70px 0;
+      font: 14px 'helvetica', arial, sans-serif;
+      text-align: left;
+}
+
+
+#main_wrapper {}
+
+/* ### header ###*/
+#header {
+     margin: 0 auto;
+     width: 850px;
+     background: #fff;
+     height: 150px;
+     padding: 40px 70px 30px 70px;
+     overflow: hidden;
+     border-top: 1px solid #dfdfdf;
+     border-left: 1px solid #dfdfdf;
+     border-right: 1px solid #dfdfdf;
+}
+
+
+#logo {
+     width: 850px;
+     padding: 0;
+}
+
+
+/* ### content ###*/
+
+#content {
+     background: #fff;
+     margin: 0 auto;
+     padding: 0px 70px 20px 70px;
+     text-align: left;
+     width: 850px;
+     border-left: 1px solid #dfdfdf;
+     border-right: 1px solid #dfdfdf;
+}
+
+/* ### footer ###*/
+
+#footer {
+     background: #fff;
+     margin: 0 auto;
+     padding: 10px 70px 70px 70px;
+     text-align: left;
+     color: #999999;
+
+     width: 850px;
+     border-bottom: 1px solid #dfdfdf;
+     border-left: 1px solid #dfdfdf;
+     border-right: 1px solid #dfdfdf;
+}
+
+.footer_text {
+     color: #999999;
+     float: left;
+     width: 850px;
+     border-top: 1px dotted #ccc;
+     padding: 40px 0 0 0;
+     margin: 0;
+}
+
+.footer_text a {
+     border-bottom: 1px dotted #000;
+     padding: 3px 0px 1px 0px;
+     color: #999999;
+}
+
+
+.footer_text a:hover {
+     color: #ff0000;
+     font-weight: normal;
+     border-bottom: 1px dotted #ff0000;
+     padding: 3px 0px 1px 0px;
+}
+
+
+/* ### content styling ###*/
+
+ul, ol {
+     margin: 0;
+     padding: 0;}
+
+p {
+     line-height: 1.5em;
+     text-align: left;
+}
+
+small {
+     font-size: 0.9em;
+     margin: 0 0 0 3px;
+}
+
+blockquote {
+     background: #fff url(images/bquote.gif) no-repeat top left;
+     color: #000;
+     font-style: italic;
+     margin: 0 0 0 0;
+     padding: 0px 20px 5px 30px;
+}
+
+code {
+  font-family:Consolas,Monaco,"Courier New",Courier,monospace;
+  overflow-x:auto;
+  white-space:pre-wrap;
+  word-wrap:break-word;
+}
+
+code, pre {
+  background:none repeat scroll 0 0 #F0F0F0;
+  color:#000000;
+  padding: 4px;
+}
+
+pre {
+  background:none repeat scroll 0 0 #F5F5F5;
+  border:1px solid #DADADA;
+  line-height:1.3em;
+  overflow:auto;
+  padding:11px;
+}
+
+
+a {
+     color: #000;
+     font-weight: normal;
+     text-decoration: none;
+     outline: none;
+}
+
+a:hover {
+     color: #ff0000;
+     text-decoration: none;
+     outline: none;
+}
+
+img {
+     border: none;
+     padding: 5px;
+}
+
+.entry h2, .entry h2 a, h2, h2 a {
+     font-size: 24px;
+     color: #000;
+     font-weight: bold;
+     text-align: left;
+     margin: 0 0 5px 0px;
+     padding: 0;
+     border: none;
+     display: block;
+     line-height: 1.3em;
+}
+
+.entry h2 a:hover {
+     color: #ff0000;
+     font-weight: bold;
+     margin: 0 0 5px 0px;
+     padding: 0;
+     border: none;
+     line-height: 1.3em;
+}
+
+.entry h3, .entry h3 a {
+     font-size: 16px;
+     font-weight: bold;
+     color: #000;
+     margin: 0;
+     padding: 5px 0 0 0px;
+}
+
+.content_left h4 {
+     color: #000;
+     font: 14px georgia, serif;
+     font-weight: normal;
+     font-style: italic;
+     padding: 0 0 40px 0;
+     margin: 0;
+}
+
+.content_left {
+     float: left;
+     margin-top: 12px;
+     width: 550px;
+     padding: 0;
+}
+
+
+.post {
+     width: 510px;
+     padding: 0;
+}
+
+.postmeta {
+     margin: 0;
+     padding: 0 0 80px 0;
+     font: 14px Georgia, serif;
+     font-style: italic;
+     color: #666;
+     text-align: left;
+}
+
+.postmeta a {
+     color: #666;
+     border-bottom: 1px dotted #666;
+     padding: 3px 0px 1px 0px;
+}
+
+.postmeta a:hover {
+     color: #ff0000;
+     border-bottom: 1px dotted #ff0000;
+     padding: 3px 0px 1px 0px;
+}
+
+.postmeta_single {
+     margin: 0;
+     padding: 0 0 30px 0;
+     font: 14px Georgia, serif;
+     font-style: italic;
+     color: #666;
+     text-align: left;
+}
+
+.postmeta_single a {
+     color: #666;
+     border-bottom: 1px dotted #666;
+     padding: 3px 0px 1px 0px;
+}
+
+.postmeta_single a:hover {
+     color: #ff0000;
+     border-bottom: 1px dotted #ff0000;
+     padding: 3px 0px 1px 0px;
+}
+
+.postdate {
+     margin: 0;
+     padding: 0 0 10px 0;
+     font: 14px Georgia, serif;
+     font-style: italic;
+     color: #666;
+     text-align: left;
+}
+
+.postdate a {
+     color: #666;
+}
+
+.postdate a:hover {
+     color: #ff0000;
+}
+
+.entry {
+     float:right;
+     padding: 0 0 10px 0;
+     width: 510px;
+     line-height: 1.5em;
+     text-align: left;
+}
+
+.entry a {
+     color: #000;
+     font-weight: normal;
+     border-bottom: 1px dotted #000;
+     padding: 3px 0px 1px 0px;
+}
+
+.entry a.image_link {
+    border: none;
+    border-bottom: none;
+}
+
+.entry a:hover {
+     color: #ff0000;
+     font-weight: normal;
+     border-bottom: 1px dotted #ff0000;
+     padding: 3px 0px 1px 0px;
+}
+
+.entry a.image_link:hover {
+   border: none;
+}
+
+.wp-caption a {
+    border: none;
+} 
+
+.wp-caption a:hover {
+    border: none;
+}
+
+.entry img {
+     background: #fff;
+     border: none;
+     padding: 0;
+
+
+}
+
+.entry a img {
+     background: #fff;
+     padding: 0px;
+     border: none;
+
+}
+
+
+.entry ul {
+     margin: 0 0 0 20px;
+     list-style: circles;
+     list-style-position: outside;
+}
+
+.entry ol {
+     margin: 0 0 0 20px;
+     list-style-position: outside;
+}
+
+.entry li {
+     margin: 0;
+}
+
+/* ### navigation index ###*/
+
+#postnavi_index a {
+     color: #666;
+}
+
+#postnavi_index a:hover {
+     color: #ff0000;
+}
+
+#postnavi_index {
+     width: 510px;
+     padding: 0 0 30px 0;
+     text-align: center;
+     font: 18px Georgia, serif;
+     font-style: italic;
+}
+
+#postnavi_index a {
+     color: #666;
+     padding: 5px 0;
+}
+
+#postnavi_index a:hover {
+     color: #ff0000;
+}
+
+
+/* ### navigation posts ###*/
+
+#navigation {
+     padding: 0 0 20px 0;
+}
+
+#navigation ul.postnavi {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+
+#navigation ul.postnavi li {
+     line-height: 24px;
+     font-weight: bold;
+}
+
+#navigation ul.postnavi li a {
+     font: 14px georgia,serif;
+     border-bottom: 1px dotted #000;
+     padding: 3px 0px 1px 0px;
+     font-style: italic;
+     font-weight: normal;
+}
+
+#navigation ul.postnavi li a:hover {
+     font: 14px georgia,serif;
+     border-bottom: 1px dotted #ff0000;
+     padding: 3px 0px 1px 0px;
+     font-style: italic;
+     font-weight: normal;
+}
+
+.more-link a {
+     padding: 12px 0 0 0:
+}
+
+
+/* ### sidebar ###*/
+
+.sidebar {
+     float: right;
+     margin: 0;
+     padding: 14px 0 0 0;
+     width: 280px;
+}
+
+.sidebar_box h4, .sidebar_box h4 a {
+     color: #000;
+     font-size: 18px;
+     font-weight: bold;
+     padding: 0 10px 5px 10px;
+     margin: 0;
+}
+
+.sidebar_box {
+     background: transparent;
+     width: 280px;
+     margin: 0;
+     padding: 0px 0px 40px 0px;
+}
+
+
+.sidebar_box .sidebar_content {
+  margin-left: 10px;
+}
+
+
+.sidebar_box a {
+     color: #000;
+}
+
+.sidebar_box .sidebar_content a {
+   color: #C0C0C0;
+}
+
+.sidebar_box .sidebar_content a:hover {
+   color: #666666;
+}
+
+.sidebar_box ul {
+     list-style: none;
+     margin: 0;
+}
+
+.sidebar_box li {
+     color: #000;
+     border-bottom: 1px dotted #ccc;
+     display: block;
+     font-size: 14px;
+     padding: 5px 10px;
+}
+
+.sidebar_box li a {
+     background: transparent;
+     color: #000;
+     display: block;
+
+}
+
+.sidebar_box li a:hover {
+     color: #ff0000;
+}
+
+.sidebar_box li.current_page_item a {
+     color: #666!important;
+     font-weight: bold;
+}
+
+.sidebar_box li.current_page_item a:hover {
+     color: #ff0000!important;
+     font-weight: bold;
+}
+
+.sidebar_box select {
+   margin-top: 10px;
+}
+
+.sidebar_box img {
+  padding: 0px;
+}
+/*### Suche ###*/
+
+#searchthis {
+     margin-top: 0.3em;
+}
+
+#s {
+     background: #f9f9f9;
+     border: 1px dotted #ccc;
+     padding: 5px;
+     margin: 0 0 0 10px;
+     vertical-align: middle;
+     width: 232px;
+     font: 14px 'helvetica', arial, sans-serif;
+}
+
+#searchsubmit {
+     vertical-align: middle;
+}
+
+
+/*### comments ###*/
+
+#comments_title {
+     border-top: 1px dotted #ccc;
+     width: 510px;
+     margin: 0;
+     padding: 0;
+}
+
+#comments {
+     float: left;
+     width: 130px;
+     margin: 0;
+     padding: 5px 0;
+     color: #8a8a8a;
+}
+
+#comment_meta {
+     float: left;
+     padding: 5px 0;
+     font-size: 13px;
+}
+
+#comment_meta a {
+     font-weight: bold;
+}
+
+ol.commentlist {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+
+ol.pingslist {
+     list-style: none;
+     width: 510px;
+     margin: 0;
+     padding: 0;
+}
+
+.commentlist li {
+     background: transparent;
+     width: 510px;
+     border-top: 1px dotted #ccc;
+     margin: 0;
+     padding: 0;
+}
+
+.commentlist li.author {
+     background: #f9f9f9;
+     width: 510px;
+     border-top: 1px dotted #ccc;
+     margin: 0;
+     padding: 0;}
+
+.pingslist li {
+     border-top: 1px dotted #ccc;
+     margin: 0;
+     padding: 0;
+}
+
+.comment_credentials {
+     float: left;
+     font-size: 1em;
+     margin: 10px 0;
+     padding: 0 0 0 10px;
+     width:60px;}
+
+.comment_credentials img.avatar {
+     background: #fff url(images/cmt_shadow.gif);
+     padding: 3px 4px 4px 4px;
+}
+
+.comment_credentials .author_highlight {
+     font-weight:bold;
+}
+
+.comment_credentials br {
+     margin: 0;
+     padding: 0;
+}
+
+.comment_text {
+     float: right;
+     margin-top: 10px;
+     padding: 0px 10px 0px 0;
+     width: 430px;
+}
+
+.comment_text p {
+     margin: 0 0 12px 0;
+}
+
+.comment_text a {
+     font-weight: bold;
+}
+
+.comment_text_tb {
+     float: right;
+     margin-top: 5px;
+     padding: 5px 5px 0px 0;
+     width: 435px;
+}
+
+.comment_text_tb p {
+     margin: 0 0 5px 0;
+}
+
+.comment_text_tb a {
+     font-weight: bold;
+}
+
+.comment_text blockquote {
+     background: transparent;
+     font-style: italic;
+     margin: 0;
+     padding: 0 20px;
+}
+
+.comment_text blockquote p {
+    margin: 0;
+    padding: 0;
+}
+
+li.author {}
+
+#commentform {
+     width: 510px;
+     padding: 0 0 0 0px;
+}
+
+#commentform p {
+     margin: 5px 0 0 0;
+     text-align: left;
+}
+
+textarea {
+     overflow: auto;
+}
+
+#author,
+#email,
+#url {
+     background: #f9f9f9;
+     border: 1px dotted #f9f9f9;
+     padding: 5px;
+     font: 14px 'Helvetica', Arial, sans-serif;
+     width: 368px;
+     height: 20px;
+     padding: 5px;
+}
+
+#comment {
+     width: 498px;
+     border: 1px dotted #f9f9f9;
+     background: #f9f9f9;
+     padding: 5px;
+     font: 14px 'helvetica', arial, sans-serif;
+     text-align: left;
+}
+
+#respond {
+     width: 510px;
+     border-top: 1px dotted #ccc;
+     border-bottom: 1px dotted #ccc;
+     color: #666;
+     padding: 5px 0 5px 0;
+     margin: 0px; }
+
+
+/* ### fixes ### */
+
+.floatleft {
+     float: left;
+     margin: 5px 8px 3px 0;
+}
+
+.floatright {
+     float: right;
+     margin: 5px 10px 3px 8px;
+}
+
+.left {
+     float: left;
+     white-space: nowrap;
+}
+
+.right {
+     float: right;
+     white-space: nowrap;
+}
+
+.clear {
+     clear: both;
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     height: 0;
+     clear: both;
+     visibility: hidden;
+}
+
+.clearfix {
+     display: inline-block;
+}
+
+.fix:after{
+     content: ".";
+     display: block;
+     height: 0;
+     clear: both;
+     visibility: hidden;
+}
+
+.fix{
+     display: inline-block;
+}
+
+* html .fix{
+     height: 1%;
+}
+
+.fix{
+     display: block;
+}
+
+.alignleft {
+     float: left;
+     text-align: left;
+}
+
+.alignright {
+     float: right;
+     margin-top: -1px;
+     text-align: right;
+}
+
+/* Hide from IE Mac \*/
+.clearfix {
+     display: block;
+}
+/* End hide from IE Mac */
+
+.wp-caption-text {
+    font-size: 10px; 
+    font-style: italic;
+}
+
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0; padding: 0px;}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em; border:none}
+a img.alignleft {float:left; margin:0 1em 1em 0; border:none}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto; border:none}
+
+/* Captions */
+.aligncenter,
+div.aligncenter {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.wp-caption {
+padding-top: 4px;
+}
+
+.wp-caption img {
+margin: 0;
+padding: 0;
+border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+font-size: 11px;
+line-height: 17px;
+padding: 0;
+margin: 0;
+padding-bottom: 5px;
+}
+/* End captions */
+
+.srp-content-box h4 a  {
+   margin: 0;
+   padding: 0;
+   font-weight: normal;
+   font-size: 16px;
+}
+
+.srp-widget-date {
+  padding-left: 10px;
+}
