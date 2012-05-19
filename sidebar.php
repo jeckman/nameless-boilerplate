@@ -1,3 +1,6 @@
+<aside id="sidebar">
+   ....site sidebar here....
+
 <div class="sidebar_box">
 <?php fb_get_search_form(); ?>
 </div>
@@ -70,3 +73,4 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 	</rdf:RDF>
 	-->
 </div></div>
+</aside>
