@@ -5,6 +5,11 @@ if ( function_exists('register_sidebar') )
 add_shortcode('wp_caption', 'fixed_img_caption_shortcode');
 add_shortcode('caption', 'fixed_img_caption_shortcode');
 
+add_theme_support( 'post-thumbnails' );
+
+
+
+
 function fixed_img_caption_shortcode($attr, $content = null) {
   $output = apply_filters('img_caption_shortcode', '', $attr, $content);
   if ( $output != '' ) return $output;
