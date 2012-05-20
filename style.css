@@ -7,6 +7,7 @@ Author: John Eckman
 Author URI: http://johneckman.com/ 
 */
 
+/* from HTML 5 Boilerplate: */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
@@ -97,7 +98,7 @@ td { vertical-align: top; }
 }
 
 /**
- * Responsive WordPress Core Theme Styles
+ * From Responsive WordPress Core Theme Styles
  * http://jeffsebring.com/responsive-wordpress-images/
 --------------------------------------------------- */
 
@@ -315,134 +316,7 @@ footer {
 	margin-left: -5px;
 }
 
-// from http://jeffsebring.com/responsive-wordpress-images/
-
-.sticky,
-.bypostauthor,
-.gallery-caption {
-   display: normal;
-}
-
-.alignnone {
-   margin: 1em 1em 1em 0;
-}
-
-.aligncenter,
-div.aligncenter {
-   display:block;
-   margin: .5em auto;
-}
-
-.alignright {
-   float:right;
-   margin: 0 0 1em 1em;
-}
-
-.alignleft {
-   float:left;
-   margin: 0 1em 1em 0;
-}
-
-.aligncenter {
-   display: block;
-   margin: 1em auto;
-}
-
-img,
-img[class*="align"],
-img[class*="wp-image-"] {
-   max-width: 100%;
-   height: auto;
-}
-
-img.wp-smiley {
-   border: none;
-   margin-bottom: 0;
-   margin-top: 0;
-   padding: 0;
-}
-
-img.alignright {
-   margin-left: 1em 0 1em 1em;
-}
-
-img.alignleft {
-   margin: 1em 1em 1em 0;
-}
-
-img.aligncenter{
-   display: block;
-   margin: 1em auto;
-}
-
-img#wpstats {
-   display: block;
-   margin: 0 auto;
-}
-
-img[class*="align"],
-img[class*="wp-image-"],
-   .gallery .gallery-icon img {
-   border: none;
-}
-
-.wp-caption {
-   margin-bottom: 1em;
-   margin-left: 0;
-   max-width: 96%;
-   text-align: center;
-}
-
-.wp-caption img {
-   display: block;
-   margin: 0 auto;
-}
-
-.wp-caption-text {
-   position: relative;
-   font-size: .8em;
-}
-
-.gallery {
-   margin: 0 auto;
-}
-
-.gallery .gallery-item  {
-   margin: 0;
-   float: left;
-   text-align: center;
-   width: 33%;
-}
-
-.gallery a img {
-   border: none;
-}
-
-.gallery-columns-4 .gallery-item {
-   width: 25%;
-}
-
-.gallery-columns-4 .gallery-item img {
-   width: 100%;
-   height: auto;
-}
-
-.comments ol    {
-   padding-left: 0;
-}
-
-.comments ol li {
-   margin: 0;
-}
-
-.comment-author {
-   padding: 0;
-   text-decoration: none;
-}
-
-
-
-// from here on are styles designed to impact site look & feel
+// from here on are styles designed to impact site look & feel and are edited from the Nameless theme
 body {
       background: #ffffff;
       color: #000;
