@@ -1,12 +1,448 @@
 /*
-Theme Name: nameless
-Theme URI: http://koch-werkstatt.de
-Description: The Theme without a name
+Theme Name: nameless-boilerplate
+Theme URI: http://github.com/jeckman/nameless-boilerplate
+Description: The Theme without a name, made responsive
 Version: 1.0
-Author: Karsten Kuhnen
-Author URI: http://koch-werkstatt.de
+Author: John Eckman
+Author URI: http://johneckman.com/ 
 */
 
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } 
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+/**
+ * Responsive WordPress Core Theme Styles
+ * http://jeffsebring.com/responsive-wordpress-images/
+--------------------------------------------------- */
+
+.sticky,
+.bypostauthor,
+.gallery-caption {
+   display: normal;
+}
+
+.alignnone {
+   margin: 1em 1em 1em 0;
+}
+
+.aligncenter,
+div.aligncenter {
+   display:block;
+   margin: .5em auto;
+}
+
+.alignright {
+   float:right;
+   margin: 0 0 1em 1em;
+}
+
+.alignleft {
+   float:left;
+   margin: 0 1em 1em 0;
+}
+
+.aligncenter {
+   display: block;
+   margin: 1em auto;
+}
+
+img,
+img[class*="align"],
+img[class*="wp-image-"] {
+   max-width: 100%;
+   height: auto;
+}
+
+img.wp-smiley {
+   border: none;
+   margin-bottom: 0;
+   margin-top: 0;
+   padding: 0;
+}
+
+img.alignright {
+   margin-left: 1em 0 1em 1em;
+}
+
+img.alignleft {
+   margin: 1em 1em 1em 0;
+}
+
+img.aligncenter{
+   display: block;
+   margin: 1em auto;
+}
+
+img#wpstats {
+   display: block;
+   margin: 0 auto;
+}
+
+img[class*="align"],
+img[class*="wp-image-"],
+   .gallery .gallery-icon img {
+   border: none;
+}
+
+.wp-caption {
+   margin-bottom: 1em;
+   margin-left: 0;
+   max-width: 96%;
+   text-align: center;
+}
+
+.wp-caption img {
+   display: block;
+   margin: 0 auto;
+}
+
+.wp-caption-text {
+   position: relative;
+   font-size: .8em;
+}
+
+.gallery {
+   margin: 0 auto;
+}
+
+.gallery .gallery-item  {
+   margin: 0;
+   float: left;
+   text-align: center;
+   width: 33%;
+}
+
+.gallery a img {
+   border: none;
+}
+
+.gallery-columns-4 .gallery-item {
+   width: 25%;
+}
+
+.gallery-columns-4 .gallery-item img {
+   width: 100%;
+   height: auto;
+}
+
+.comments ol    {
+   padding-left: 0;
+}
+
+.comments ol li {
+   margin: 0;
+}
+
+.comment-author {
+   padding: 0;
+   text-decoration: none;
+}
+
+@media only screen {
+	header, section, footer, aside {
+		width: 95%;
+		padding-left: 3%; 
+		padding-right: 2%;
+	}
+}
+
+embed,object {
+    max-width: 95%;
+	margin: auto;
+}
+
+@media only screen and (min-width: 400px) {
+
+aside {
+  max-width: 310px;
+  margin: auto; 
+}
+
+
+}
+
+@media only screen and (min-width: 750px) {
+
+header {
+    width: 95%;
+	padding-left: 3%;
+	padding-right: 2%;
+}
+
+section {
+	float: left;
+	width: 60%;
+	padding-right: 2%;
+	padding-left: 3%;
+}
+
+aside {
+	float: right;
+	width: 30%;
+	padding-left: 2%; 
+	padding-right: 3%
+}
+
+footer {
+	clear: both;
+	padding-left: 3%;
+	padding-right: 2%;
+}
+}
+
+@media only screen and (min-width: 1140px) {
+
+header, footer {
+	width: 95%;
+	max-width: 850px;
+	padding-left: 3%;
+	padding-right: 2%;
+}
+
+section {
+	float: left;
+	width: 60%; 
+	max-width: 650px;
+	padding-left: 3%;
+	padding-right: 2%;
+}
+
+aside {
+	float: left; 
+	width: 30%;
+	max-width: 350px;
+	padding-left: 2%;
+	padding-right: 3%; 
+}
+
+footer {
+	clear: both;
+	max-width: 850px;
+	padding-left: 3%;
+	padding-right: 2%;
+	float: left;
+}
+
+}
+
+#logo {
+	margin-left: -5px;
+}
+
+// from http://jeffsebring.com/responsive-wordpress-images/
+
+.sticky,
+.bypostauthor,
+.gallery-caption {
+   display: normal;
+}
+
+.alignnone {
+   margin: 1em 1em 1em 0;
+}
+
+.aligncenter,
+div.aligncenter {
+   display:block;
+   margin: .5em auto;
+}
+
+.alignright {
+   float:right;
+   margin: 0 0 1em 1em;
+}
+
+.alignleft {
+   float:left;
+   margin: 0 1em 1em 0;
+}
+
+.aligncenter {
+   display: block;
+   margin: 1em auto;
+}
+
+img,
+img[class*="align"],
+img[class*="wp-image-"] {
+   max-width: 100%;
+   height: auto;
+}
+
+img.wp-smiley {
+   border: none;
+   margin-bottom: 0;
+   margin-top: 0;
+   padding: 0;
+}
+
+img.alignright {
+   margin-left: 1em 0 1em 1em;
+}
+
+img.alignleft {
+   margin: 1em 1em 1em 0;
+}
+
+img.aligncenter{
+   display: block;
+   margin: 1em auto;
+}
+
+img#wpstats {
+   display: block;
+   margin: 0 auto;
+}
+
+img[class*="align"],
+img[class*="wp-image-"],
+   .gallery .gallery-icon img {
+   border: none;
+}
+
+.wp-caption {
+   margin-bottom: 1em;
+   margin-left: 0;
+   max-width: 96%;
+   text-align: center;
+}
+
+.wp-caption img {
+   display: block;
+   margin: 0 auto;
+}
+
+.wp-caption-text {
+   position: relative;
+   font-size: .8em;
+}
+
+.gallery {
+   margin: 0 auto;
+}
+
+.gallery .gallery-item  {
+   margin: 0;
+   float: left;
+   text-align: center;
+   width: 33%;
+}
+
+.gallery a img {
+   border: none;
+}
+
+.gallery-columns-4 .gallery-item {
+   width: 25%;
+}
+
+.gallery-columns-4 .gallery-item img {
+   width: 100%;
+   height: auto;
+}
+
+.comments ol    {
+   padding-left: 0;
+}
+
+.comments ol li {
+   margin: 0;
+}
+
+.comment-author {
+   padding: 0;
+   text-decoration: none;
+}
+
+
+
+// from here on are styles designed to impact site look & feel
 body {
       background: #ffffff;
       color: #000;
@@ -16,37 +452,20 @@ body {
       text-align: left;
 }
 
-
-#main_wrapper {}
-
 /* ### header ###*/
 #header {
-     margin: 0 auto;
-     width: 850px;
      background: #fff;
-     height: 150px;
-     padding: 40px 70px 30px 70px;
      overflow: hidden;
      border-top: 1px solid #dfdfdf;
      border-left: 1px solid #dfdfdf;
      border-right: 1px solid #dfdfdf;
 }
 
-
-#logo {
-     width: 850px;
-     padding: 0;
-}
-
-
-/* ### content ###*/
-
 #content {
      background: #fff;
      margin: 0 auto;
      padding: 0px 70px 20px 70px;
      text-align: left;
-     width: 850px;
      border-left: 1px solid #dfdfdf;
      border-right: 1px solid #dfdfdf;
 }
@@ -59,8 +478,6 @@ body {
      padding: 10px 70px 70px 70px;
      text-align: left;
      color: #999999;
-
-     width: 850px;
      border-bottom: 1px solid #dfdfdf;
      border-left: 1px solid #dfdfdf;
      border-right: 1px solid #dfdfdf;
@@ -69,7 +486,6 @@ body {
 .footer_text {
      color: #999999;
      float: left;
-     width: 850px;
      border-top: 1px dotted #ccc;
      padding: 40px 0 0 0;
      margin: 0;
@@ -91,21 +507,6 @@ body {
 
 
 /* ### content styling ###*/
-
-ul, ol {
-     margin: 0;
-     padding: 0;}
-
-p {
-     line-height: 1.5em;
-     text-align: left;
-}
-
-small {
-     font-size: 0.9em;
-     margin: 0 0 0 3px;
-}
-
 blockquote {
      background: #fff url(images/bquote.gif) no-repeat top left;
      color: #000;
@@ -192,19 +593,6 @@ img {
      margin: 0;
 }
 
-.content_left {
-     float: left;
-     margin-top: 12px;
-     width: 550px;
-     padding: 0;
-}
-
-
-.post {
-     width: 510px;
-     padding: 0;
-}
-
 .postmeta {
      margin: 0;
      padding: 0 0 80px 0;
@@ -262,14 +650,6 @@ img {
 
 .postdate a:hover {
      color: #ff0000;
-}
-
-.entry {
-     float:right;
-     padding: 0 0 10px 0;
-     width: 510px;
-     line-height: 1.5em;
-     text-align: left;
 }
 
 .entry a {
@@ -345,7 +725,6 @@ img {
 }
 
 #postnavi_index {
-     width: 510px;
      padding: 0 0 30px 0;
      text-align: center;
      font: 18px Georgia, serif;
@@ -403,10 +782,8 @@ img {
 /* ### sidebar ###*/
 
 .sidebar {
-     float: right;
      margin: 0;
      padding: 14px 0 0 0;
-     width: 280px;
 }
 
 .sidebar_box h4, .sidebar_box h4 a {
@@ -419,7 +796,6 @@ img {
 
 .sidebar_box {
      background: transparent;
-     width: 280px;
      margin: 0;
      padding: 0px 0px 40px 0px;
 }
@@ -508,14 +884,12 @@ img {
 
 #comments_title {
      border-top: 1px dotted #ccc;
-     width: 510px;
      margin: 0;
      padding: 0;
 }
 
 #comments {
      float: left;
-     width: 130px;
      margin: 0;
      padding: 5px 0;
      color: #8a8a8a;
@@ -539,14 +913,12 @@ ol.commentlist {
 
 ol.pingslist {
      list-style: none;
-     width: 510px;
      margin: 0;
      padding: 0;
 }
 
 .commentlist li {
      background: transparent;
-     width: 510px;
      border-top: 1px dotted #ccc;
      margin: 0;
      padding: 0;
@@ -554,7 +926,6 @@ ol.pingslist {
 
 .commentlist li.author {
      background: #f9f9f9;
-     width: 510px;
      border-top: 1px dotted #ccc;
      margin: 0;
      padding: 0;}
@@ -570,7 +941,7 @@ ol.pingslist {
      font-size: 1em;
      margin: 10px 0;
      padding: 0 0 0 10px;
-     width:60px;}
+}
 
 .comment_credentials img.avatar {
      background: #fff url(images/cmt_shadow.gif);
@@ -590,7 +961,6 @@ ol.pingslist {
      float: right;
      margin-top: 10px;
      padding: 0px 10px 0px 0;
-     width: 430px;
 }
 
 .comment_text p {
@@ -605,7 +975,6 @@ ol.pingslist {
      float: right;
      margin-top: 5px;
      padding: 5px 5px 0px 0;
-     width: 435px;
 }
 
 .comment_text_tb p {
@@ -631,7 +1000,6 @@ ol.pingslist {
 li.author {}
 
 #commentform {
-     width: 510px;
      padding: 0 0 0 0px;
 }
 
@@ -651,13 +1019,10 @@ textarea {
      border: 1px dotted #f9f9f9;
      padding: 5px;
      font: 14px 'Helvetica', Arial, sans-serif;
-     width: 368px;
-     height: 20px;
      padding: 5px;
 }
 
 #comment {
-     width: 498px;
      border: 1px dotted #f9f9f9;
      background: #f9f9f9;
      padding: 5px;
@@ -754,31 +1119,6 @@ textarea {
     font-style: italic;
 }
 
-img.alignright {float:right; margin:0 0 1em 1em}
-img.alignleft {float:left; margin:0 1em 1em 0; padding: 0px;}
-img.aligncenter {display: block; margin-left: auto; margin-right: auto}
-a img.alignright {float:right; margin:0 0 1em 1em; border:none}
-a img.alignleft {float:left; margin:0 1em 1em 0; border:none}
-a img.aligncenter {display: block; margin-left: auto; margin-right: auto; border:none}
-
-/* Captions */
-.aligncenter,
-div.aligncenter {
-display: block;
-margin-left: auto;
-margin-right: auto;
-}
-
-.wp-caption {
-padding-top: 4px;
-}
-
-.wp-caption img {
-margin: 0;
-padding: 0;
-border: 0 none;
-}
-
 .wp-caption p.wp-caption-text {
 font-size: 11px;
 line-height: 17px;
@@ -798,3 +1138,5 @@ padding-bottom: 5px;
 .srp-widget-date {
   padding-left: 10px;
 }
+
+

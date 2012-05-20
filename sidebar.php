@@ -1,6 +1,4 @@
 <aside id="sidebar">
-   ....site sidebar here....
-
 <div class="sidebar_box">
 <?php fb_get_search_form(); ?>
 </div>
