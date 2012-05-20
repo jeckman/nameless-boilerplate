@@ -233,7 +233,7 @@ img[class*="wp-image-"],
 	}
 }
 
-embed,object {
+embed,object, div {
     max-width: 95%;
 	margin: auto;
 }
